@@ -1,8 +1,7 @@
 name: flavorizer_config
-description: A new Flutter project.
+description: A new flutter utility to easily create flavors in your flutter application.
 version: 0.0.1
 homepage: https://github.com/MohamedGhoneem/flavorizer_config
-publish_to: https://pub.dev/publishers/ghoneem.com/packages
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
