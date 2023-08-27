@@ -6,12 +6,12 @@ enum Flavors {
   stage,
 }
 
-class FlavorConfig {
+class FlavorizerConfig {
   /// Internal instance of FlavorConfig
-  static FlavorConfig? _instance;
+  static FlavorizerConfig? _instance;
 
-  static FlavorConfig get instance {
-    _instance ??= FlavorConfig();
+  static FlavorizerConfig get instance {
+    _instance ??= FlavorizerConfig();
 
     return _instance!;
   }
@@ -22,17 +22,17 @@ class FlavorConfig {
   Widget? child;
 
   /// Private constructor
-  FlavorConfig._internal(
+  FlavorizerConfig._internal(
       this.appTitle, this.flavor, this.variables);
 
   /// Factory constructor
-  factory FlavorConfig(
+  factory FlavorizerConfig(
       {Key? key,
       String? title,
         Flavors? flavor,
         Map<String, dynamic>? variables,
       }) {
-    _instance = FlavorConfig._internal(
+    _instance = FlavorizerConfig._internal(
       title,
       flavor,
       variables

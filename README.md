@@ -5,7 +5,7 @@ With `null-safety`
 
 ```dart
       dependencies:
-          flavorizer_config: ^1.0.2
+          flavorizer_config: ^1.0.3
 ```
 
 Add the dependency to your project and start using **flavorizer_config** #
@@ -25,26 +25,18 @@ Here are an example that show you how to use this plugin.
 
 ## main.dart
 ```dart
-
+  final flavorVariablesModel = FlavorVariablesModel()
+    ..title = 'Development App'
+    ..iconPath = 'assets/images/icon.png'
+    ..appId = 'com.flavor.app'
+    ..baseUrl = 'https//www.flavor.com'
+    ..description = 'Production Flavor';
+  FlavorizerConfig(
+      title: 'Development',
+      flavor: Flavors.dev,
+      variables: flavorVariablesModel.toJson());
 ```
-## responsive_view.dart
-```dart
 
-```
-
-
-## responsive_screens widgets
-
-## ScreenTypeLayout
-**ScreenTypeLayout** is a Flutter widget you can provide a multi screen type to ((required) mobile - (optional) tablet - (optional) desktop) .
-
-```dart
-ScreenTypeLayout(
-mobile: ResponsiveViewMobile(),
-tablet: ResponsiveViewTablet(),
-desktop: ResponsiveViewDesktop(),
-);
-```
 
 
 ## Improve
