@@ -1,6 +1,6 @@
 name: flavorizer_config
 description: A new flutter utility to easily create flavors in your flutter application.
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/MohamedGhoneem/flavorizer_config
 
 environment:

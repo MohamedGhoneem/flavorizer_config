@@ -1,5 +1,5 @@
 library flavorizer_config;
-export 'src/flavor_config.dart';
+export 'src/flavorizer_config.dart';
 
 // /// A Calculator.
 // class Calculator {

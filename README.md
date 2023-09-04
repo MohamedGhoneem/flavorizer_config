@@ -5,7 +5,7 @@ With `null-safety`
 
 ```dart
       dependencies:
-          flavorizer_config: ^1.0.3
+          flavorizer_config: ^0.0.4
 ```
 
 Add the dependency to your project and start using **flavorizer_config** #
@@ -27,12 +27,10 @@ Here are an example that show you how to use this plugin.
 ```dart
   final flavorVariablesModel = FlavorVariablesModel()
     ..title = 'Development App'
-    ..iconPath = 'assets/images/icon.png'
-    ..appId = 'com.flavor.app'
     ..baseUrl = 'https//www.flavor.com'
     ..description = 'Production Flavor';
   FlavorizerConfig(
-      title: 'Development',
+      appTitle: 'Development',
       flavor: Flavors.dev,
       variables: flavorVariablesModel.toJson());
 ```
